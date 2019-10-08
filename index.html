@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <style>
+        input[type="text"]{
+            width: 300px;
+        }
+        </style>
+    </head>
+    <body>
+        <input mask="[^@\s\.]*@[^@\s\.]*?\.[^@\s\.]*" type="text" placeholder="email"/>
+        <input mask="asd[0-9]{3,6}DO" type="text"/>
+        <input mask="-?\d*[.,]\d{2}" type="text"/>
+        <input mask="----  [a-zA-Z]*  ----" type="text"/>
+        <script src="rmask.js"></script>
+        <script type="text/javascript">
+                window.onload = function(){
+                    maskInput()
+                };
+            </script>
+    </body>
+</html>
